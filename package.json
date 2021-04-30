@@ -1,0 +1,38 @@
+{
+  "name": "short-module-name-plugin",
+  "version": "1.1.0",
+  "description": "webpack 短 module name 生成插件，解决 webpack 构建过程中 module id 变化，文件内容变化，导致的 chunkhash 变化问题",
+  "main": "dist/cjs.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src -d dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinhanwen/short-module-name-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qinhanwen/short-module-name-plugin/issues"
+  },
+  "homepage": "https://github.com/qinhanwen/short-module-name-plugin#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "webpack": "^4.30.0"
+  },
+  "dependencies": {
+    "cacache": "^15.0.6",
+    "find-cache-dir": "^3.3.1",
+    "lodash": "^4.17.21",
+    "serialize-javascript": "^5.0.1"
+  }
+}
